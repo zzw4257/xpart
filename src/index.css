@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-gray-900 to-gray-700 text-gray-200 font-sans;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* Retain margin reset */
+  display: flex; /* Retain for centering App.jsx content, App.jsx also has flex */
+  place-items: center; /* Retain for centering App.jsx content */
+}
+
+/* Optional: Define a global style for code blocks if not always using .font-mono explicitly */
+/*
+code, pre {
+  @apply font-mono text-sm;
+}
+*/
+
+/* Remove Vite's default light theme media query and other specific element styles */
+/* Let Tailwind utility classes control specific element styling. */
